@@ -1,11 +1,11 @@
 # AWS ES Connection
 
-AWS ES connection for the new elasticsearch client (@elastic/elasticsearch)
+AWS ES connection for the new opensearch client (@opensearch-project/opensearch)
 
 ## Usage
  Javascript:
 ```js
-const { Client } = require('@elastic/elasticsearch')
+const { Client } = require('@opensearch-project/opensearch')
 const { createAWSConnection, awsGetCredentials } = require('@acuris/aws-es-connection')
 
 const awsCredentials = await awsGetCredentials()
@@ -23,7 +23,7 @@ await client.cat.help()
 ```ts
 import { createAWSConnection, awsGetCredentials } from '@acuris/aws-es-connection'
 import AWS from 'aws-sdk'
-import { Client } from '@elastic/elasticsearch'
+import { Client } from '@opensearch-project/opensearch'
 
 const awsCredentials = await awsGetCredentials()
 const AWSConnection = createAWSConnection(awsCredentials)
@@ -37,7 +37,7 @@ await client.cat.help()
 ```
 
 ## How does it work?
-This package creates a Connection class that signs the requests to AWS elasticsearch and a Transport class that checks that the AWS credentials haven't expired before every call, and refreshes them when needed.
+This package creates a Connection class that signs the requests to AWS opensearch and a Transport class that checks that the AWS credentials haven't expired before every call, and refreshes them when needed.
 
 ## Developer notes
 
@@ -50,4 +50,4 @@ You need a running AWS ES instance for the tests to run against. Set the endpoin
 AWS_ES_ENDPOINT=https://xxxx.es.amazonaws.com npm test
 ```
 ### Tested versions
-This package has been tested on versions of the official elasticsearch client up to 7.13.0. 
+This package has been tested on versions of the official opensearch client up to 7.13.0. 

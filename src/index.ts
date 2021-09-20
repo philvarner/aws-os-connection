@@ -1,9 +1,10 @@
-import { config, Credentials } from 'aws-sdk/global'
-import { request as httpRequest, ClientRequest, ClientRequestArgs } from 'http'
+import { ApiResponse, TransportRequestPromise } from '@opensearch-project/opensearch/lib/Transport'
+import { ClientOptions, Connection, Transport } from '@opensearch-project/opensearch'
+import { ClientRequest, ClientRequestArgs, request as httpRequest } from 'http'
+import { Credentials, config } from 'aws-sdk/global'
+
 import { request as httpsRequest } from 'https'
 import { sign } from 'aws4'
-import { ClientOptions, Connection, Transport } from '@elastic/elasticsearch'
-import { ApiResponse, TransportRequestPromise } from '@elastic/elasticsearch/lib/Transport'
 
 function generateAWSConnectionClass(credentials: Credentials) {
   return class AWSConnection extends Connection {

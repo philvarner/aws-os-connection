@@ -1,6 +1,8 @@
-import { createAWSConnection, awsGetCredentials } from './index'
 import * as AWS from 'aws-sdk'
-import { Client } from '@elastic/elasticsearch'
+
+import { awsGetCredentials, createAWSConnection } from './index'
+
+import { Client } from '@opensearch-project/opensearch'
 
 describe('aws-es-connection', () => {
   let esClient: Client
