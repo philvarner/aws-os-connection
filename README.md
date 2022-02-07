@@ -6,6 +6,21 @@ Thanks to [ChristopherGillis](https://github.com/ChristopherGillis) and as well 
 
 PRs/Issues welcome.
 
+
+## Installation
+
+Just add this library with your favorite Node package manager. Examples below.
+
+`aws-sdk` and `@opensearch-project/opensearch` are required peer dependencies for this library to function, so make sure you have both of those installed.
+
+```bash
+yarn add aws-os-connection aws-sdk @opensearch-project/opensearch
+
+# or
+
+npm install aws-os-connection aws-sdk @opensearch-project/opensearch
+```
+
 ## Usage
 
 Javascript:
