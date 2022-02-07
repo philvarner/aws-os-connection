@@ -13,11 +13,14 @@ jobs:
       - run: yarn install --frozen-lockfile
       - run: yarn build
 
-  test:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-      - run: yarn install --frozen-lockfile
-      - run: yarn test
+  # Cannot run tests without an OS instance attached.
+  # That's a bit too much overhead for this library.
+  # If the tests were ever refactored to not use OS itself then we could re-enable this.
+  # test:
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - uses: actions/setup-node@v2
+  #     - run: yarn install --frozen-lockfile
+  #     - run: yarn test
