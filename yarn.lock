@@ -562,9 +562,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@opensearch-project/opensearch@git+https://github.com/opensearch-project/opensearch-js.git":
+"@opensearch-project/opensearch@1.0.2":
   version "1.0.2"
-  resolved "git+https://github.com/opensearch-project/opensearch-js.git#68eea00b078710c876bd4c65f7b817c8d418a25f"
+  resolved "https://registry.yarnpkg.com/@opensearch-project/opensearch/-/opensearch-1.0.2.tgz#b5946bcd2b6b655b4ae8fbb4562411cf283a7503"
+  integrity sha512-gQ2CjbS7/pJ4A3IBWd+AD0KbCaAnE1Ur9baRxqM1NMH/7A8GQxwtVxx8raUOf4HZExkZZOUYBMzJgWM1OyELyw==
   dependencies:
     debug "^4.3.1"
     hpagent "^0.1.1"
