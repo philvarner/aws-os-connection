@@ -1,8 +1,8 @@
 {
-  "name": "@acuris/aws-es-connection",
+  "name": "aws-os-connection",
   "private": false,
-  "version": "2.3.0",
-  "description": "AWS OpenSearch connection for the @opensearch-project/opensearch ES client",
+  "version": "0.1.0",
+  "description": "AWS connection for the @opensearch-project/opensearch OpenSearch client",
   "keywords": [
     "aws",
     "elasticsearch",
@@ -14,10 +14,13 @@
     "elastic",
     "search"
   ],
-  "homepage": "https://github.com/mergermarket/acuris-aws-es-connection#readme",
+  "homepage": "https://github.com/mattwilkinsonn/aws-os-connection#readme",
+  "bugs": {
+    "url": "https://github.com/mattwilkinsonn/aws-os-connection/issues"
+  },
   "repository": {
     "repository": "git",
-    "url": "https://github.com/mergermarket/acuris-aws-es-connection.git"
+    "url": "https://github.com/mattwilkinsonn/aws-os-connection.git"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -33,11 +36,11 @@
   "author": "Acuris",
   "license": "MIT",
   "peerDependencies": {
-    "@opensearch-project/opensearch": "git+https://github.com/opensearch-project/opensearch-js.git",
+    "@opensearch-project/opensearch": "1.0.2",
     "aws-sdk": ">=2"
   },
   "devDependencies": {
-    "@opensearch-project/opensearch": "git+https://github.com/opensearch-project/opensearch-js.git",
+    "@opensearch-project/opensearch": "1.0.2",
     "@types/node": "^16.3.2",
     "@typescript-eslint/eslint-plugin": "^4.28.3",
     "@typescript-eslint/parser": "^4.28.3",
