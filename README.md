@@ -76,4 +76,4 @@ AWS_ES_ENDPOINT=https://xxxx.es.amazonaws.com yarn test
 
 ### Tested versions
 
-This package has been tested on versions of the official OpenSearch client up to 1.0.2.
+This package has been tested on versions of the official OpenSearch client up to 2.0.0.
