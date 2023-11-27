@@ -1,11 +1,10 @@
-# AWS ES Connection
+# AWS OpenSearch Connection
 
-AWS ES connection for the new OpenSearch client (@opensearch-project/opensearch)
+AWS OpenSearch Connection library for the new OpenSearch client (@opensearch-project/opensearch).
 
 Thanks to [ChristopherGillis](https://github.com/ChristopherGillis) and as well as the contributors to the [Acuris version](https://github.com/mergermarket/acuris-aws-es-connection) of this library. I've simply added an action to release this updated OpenSearch version to NPM. I'll continue to maintain this as needed, though hopefully AWS intergrates this directly into their client at some point.
 
 PRs/Issues welcome.
-
 
 ## Installation
 
@@ -68,7 +67,7 @@ This package creates a Connection class that signs the requests to AWS OpenSearc
 
 Make sure that your AWS credentials are available to your env, for example you could set them in your ENV.
 
-You need a running AWS ES instance for the tests to run against. Set the endpoint URL as the env `AWS_ES_ENDPOINT`.
+You need a running AWS OpenSearch instance for the tests to run against. Set the endpoint URL as the env `AWS_ES_ENDPOINT`.
 
 ```bash
 AWS_ES_ENDPOINT=https://xxxx.es.amazonaws.com yarn test
